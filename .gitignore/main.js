@@ -39,6 +39,7 @@ bot.on('message', message => {
     if (message.content === prefix + "info 527"){
         var scp_527 = new Discord.RichEmbed()
             .setColor('#07A48F')
+            .setThumbnail("http://scp-wiki.wdfiles.com/local--files/scp-527/fish.png")
             .addField("**Objet#**:", "SCP-527")
             .addField("**Classe**:", "Euclide")
             .addField("**Procédures de Confinement Spéciales**:", "SCP-527 doit être contenu dans un domicile pour humanoïde standard au Site-19. Aucune autre procédure de confinement n'est nécessaire.")
@@ -55,6 +56,7 @@ bot.on('message', message => {
     if (message.content === prefix + "info 682"){
         var scp_682 = new Discord.RichEmbed()
             .setColor('#07A48F')
+            .setThumbnail("http://scp-wiki.wdfiles.com/local--files/scp-682/monster8editub9.jpg")
             .addField("**Objet#**:", "SCP-682")
             .addField("**Classe**:", "Keter")
             .addField("**Procédures de Confinement Spéciales**:", "SCP-682 doit être détruit dès que possible. Pour l'instant, aucun moyen à la disposition de la Fondation n'est capable de détruire SCP-682, seulement susceptible de provoquer des dommages physiques importants. SCP-682 doit être contenu dans une chambre de 5m x 5m x 5m doublée de plaques d'acier de 25,4 cm d’épaisseur résistantes à l'acide chlorhydrique. La chambre de confinement doit être remplie avec de l'acide jusqu'à ce que SCP-682 soit immergé et en stase. Toute tentative de SCP-682 visant à se déplacer, à parler, ou à forcer le confinement doit être immédiatement stoppée avec la force rendue nécessaire par les circonstances.")
