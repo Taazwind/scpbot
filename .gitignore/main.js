@@ -74,6 +74,7 @@ bot.on('message', message => {
     if (message.content === prefix + "info 106"){
         var scp_106 = new Discord.RichEmbed()
            .setColor('#07A48F')
+           .setThumbnail("http://scp-wiki.wdfiles.com/local--files/scp-106/that%20man.jpg")
            .addField("**Objet#**:", "SCP-106")
            .addField("**Classe**:", "Keter")
            .addField("**Procédures de Confinement Spéciales**:", "Aucune interaction physique avec SCP-106 n'est autorisée. Toutes les interactions physiques doivent être approuvées par au moins un vote des deux tiers du Commandement O5, et ne peuvent avoir lieu que dans la situation d'un test. Toute interaction doit être effectuée dans les sites à sécurité maximale AR-II, après une évacuation générale du personnel non essentiel. Tout le personnel (Recherche, Sécurité, Classe D, etc) doit rester à au moins soixante mètres de l'enceinte de confinement à tout moment, sauf sur ordre direct du Commandement du Site.")
