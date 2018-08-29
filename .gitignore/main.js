@@ -168,12 +168,5 @@ bot.on('message', message => {
         message.channel.sendEmbed(scp_173);
         console.log("Commande Info 173 faite");  
     }
-    if(message.content === prefix + "info classe"){
-        var classe_scp = new Discord.RichEmbed()
-            .setColor('#07A48F')
-            .setThumbnail("https://www.google.fr/search?q=30+classe+scp&rlz=1C1CHBD_enFR802FR802&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjzoYvXqpLdAhVH-YUKHTk3A1cQ_AUICigB&biw=1920&bih=974#imgrc=ZLWsHt3oTnFaMM:")
-        message.channel.sendEmbed(classe_scp);
-        console.log("Commande Info Classe SCP");   
-    }
-
+   
 });
