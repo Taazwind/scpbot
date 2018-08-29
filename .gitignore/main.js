@@ -13,7 +13,7 @@ var bot = new Discord.Client();
 var prefix = ("/");
 
 bot.on('Prêt !', async () => {
-    bot.user.setActivity('[/help]', { type: 'WATCHING' });
+    bot.user.setActivity('/help', { type: 'WATCHING' });
     console.log("Bot prêt !");
 });
 
