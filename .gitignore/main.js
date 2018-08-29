@@ -12,7 +12,7 @@ app.listen(app.get('port'), function(){
 var bot = new Discord.Client();
 var prefix = ("/");
 
-bot.on('Prêt !', async () => {
+bot.on('Prêt !', () => {
     bot.user.setActivity('/help', { type: 'WATCHING' });
     console.log("Bot prêt !");
 });
