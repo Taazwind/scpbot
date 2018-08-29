@@ -175,6 +175,7 @@ bot.on('message', message => {
            .addField("**Classe**:", "Apollyon")
            .addField("**Description**:", "Le PIRRRRRRRRE membre de la Fondation SCP !")
            .addField("La liste de ce qu'il est interdit de faire:", "[La liste](http://fondationscp.wikidot.com/the-things-dr-bright-is-not-allowed-to-do-at-the-foundation)", true)
+           .setFooter("La devise de la Fondation est \"Sécuriser, Contenir, Protéger\", et non pas l'une des choses suivantes:  \n \"Sucer Couilles et Pénis\"")
         message .channel.sendEmbed(dr_bright);
         console.log("Commande Dr Bright faite");  
 
