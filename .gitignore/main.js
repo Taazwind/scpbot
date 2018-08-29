@@ -136,17 +136,6 @@ bot.on('message', message => {
             
 
     }
-    if (message.content === prefix + "info bright"){
-        var dr_bright = new Discord.RichEmbed()
-           .setColor('#07A48F')
-           .addField("**Objet#**:", "Dr Bright")
-           .addField("**Classe**:", "Apollyon")
-           .addField("**Description**:", "Le PIRRRRRRRRE membre de la Fondation SCP !")
-           .addField("La liste de ce qu'il est interdit de faire:", "[La liste](http://fondationscp.wikidot.com/the-things-dr-bright-is-not-allowed-to-do-at-the-foundation)", true)
-        message .channel.sendEmbed(dr_bright);
-        console.log("Commande Dr Bright faite");  
-
-    }
     if (message.content  === prefix + "info 060-fr"){
         var scp_060fr = new Discord.RichEmbed()
             .setColor('#07A48F')
@@ -179,5 +168,18 @@ bot.on('message', message => {
         message.channel.sendEmbed(scp_173);
         console.log("Commande Info 173 faite");  
     }
+    if (message.content === prefix + "info bright"){
+        var dr_bright = new Discord.RichEmbed()
+           .setColor('#07A48F')
+           .addField("**Objet#**:", "Dr Bright")
+           .addField("**Classe**:", "Apollyon")
+           .addField("**Description**:", "Le PIRRRRRRRRE membre de la Fondation SCP !")
+           .addField("La liste de ce qu'il est interdit de faire:", "[La liste](http://fondationscp.wikidot.com/the-things-dr-bright-is-not-allowed-to-do-at-the-foundation)", true)
+        message .channel.sendEmbed(dr_bright);
+        console.log("Commande Dr Bright faite");  
+
+    }
+
+
    
 });
