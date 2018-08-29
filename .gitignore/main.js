@@ -13,7 +13,7 @@ var bot = new Discord.Client();
 var prefix = ("/");
 
 bot.on('ready', () => {
-    bot.user.setGame("[/help]|Joue avec 173");
+    bot.user.setGame("[/help]|Joue avec 173!");
     console.log("Bot prêt !");
 });
 
