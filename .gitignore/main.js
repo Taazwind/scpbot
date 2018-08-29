@@ -131,5 +131,24 @@ bot.on('message', message => {
             
 
     }
+    if (message.content  === prefix + "info 060-fr"){
+        var scp_060fr = new Discord.RichEmbed()
+            .setColor('#07A48F')
+            .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-060-fr/wC4tuke.jpg")
+            .addField("**Objet#**:", "SCP-060-FR")
+            .addField("**Niveau de Menace**:", "Orange")
+            .addField("**Classe**:", "Euclide")
+            .addField("**Procédures de Confinement Spéciales**:", "SCP-060-FR doit être confiné dans une cellule pour humanoïde standard de l'Unité de Confinement-04 du Secteur-E8 de la Zone Armée de Recherche et de Confinement-Avanaa. La cellule ne doit posséder ni fenêtre, ni conduit de ventilation, et doit être scellée hermétiquement. De plus, celle-ci doit être éclairée en permanence et sa température doit être maintenue au-dessus de vingt-cinq (25) degrés Celsius. Le seul accès à la cellule doit être fermé à l'aide d'une porte en acier blindé dont la face intérieure doit être recouverte d'une plaque d'électrum1 de cinq (5) centimètres d'épaisseur.")
+            .addField("**Procédures de Confinement Spéciales**:(2)", "Un minimum de deux (2) gardes armés de lance-flammes M2 doit être présent en permanence à proximité de la cellule de SCP-060-FR. Toutes les instances de SCP-060-FR-1 et -2 doivent être immédiatement détruites par le feu et leurs restes doivent être jetés dans l'incinérateur prévu à cet effet.En aucun cas, les restes d’un être vivant doivent se trouver à moins de vingt (20) mètres de l’entité.2")
+            .addField("**Procédures de Confinement Spéciales**:(3)", "Suite à l'Incident 060-EV-01, un sas de quinze (15) mètres de long doit être aménagé à l'entrée de la cellule de SCP-060-FR dans le but de diminuer les risques de brèches de confinement. Une (1) unité de combat robotisée de classe Dragon doit être présente en permanence à l'intérieur du sas. Celle-ci doit subir une maintenance toutes les semaines et être remplacée si nécessaire.Un microphone relié au Poste de garde-E8-04 doit être installé à l'intérieur de la cellule.")
+            .addField("**Description**:", "SCP-060-FR est une entité humanoïde de 1,75 mètre portant une grande bure noire fabriquée dans un tissu inconnu à consistance brumeuse. Il est actuellement impossible de distinguer son visage à cause de la présence permanente d'un voile noir à son emplacement. L'entité porte des gantelets et des bottes fabriqués dans un métal inconnu.Les tests initiaux3 effectués après sa capture ont permis de déterminer que SCP-060-FR possède bien un corps physique bien que celui-ci ne présente aucun signe vital.")
+            .addField("**Description**:(2)", "SCP-060-FR possède la capacité de faire varier la température de l'air de zéro (0) à -2██ degrés Celsius à volonté dans un rayon de cinq (5) mètres autour de lui.Il a aussi été observé que SCP-060-FR possède la capacité de se faufiler dans tous les types d'ouvertures peu importe leur taille ou leur forme. \n À noter que son contrôle sur ces deux capacités est fortement diminué lorsque la température ambiante dépasse vingt-cinq (25) degrés Celsius.")
+            .addField("**Description**:(3)", "SCP-060-FR est fortement affecté négativement par l'or et l'argent et ne peut pas s'approcher à moins de ██ mètres de tout ce qui contient entre ██ et ██ pourcents de ces deux métaux sans [DONNÉES SUPPRIMÉES].")
+            .addField("**Description**:(4)", "La principale capacité anormale de l'entité se manifeste lorsque les restes d'un être vivant4 se trouvent à moins de vingt (20) mètres de celle-ci. Lorsque cela se produit, SCP-060-FR envoie cinq (5) chaînettes se planter dans les membres et la tête du corps. Les restes sont alors désignés SCP-060-FR-1. Une fois les chaînettes implantées, SCP-060-FR est en mesure de contrôler l'instance de SCP-060-FR-1 comme un pantin jusqu'à ce que celle-ci soit totalement détruite. Le nombre maximum de corps que l'entité peut contrôler simultanément est actuellement inconnu. À noter que les instances de SCP-060-FR-1 réagissent de la même façon que l'entité lorsqu'elles sont exposées à de l'or ou à de l'argent.")
+            .addField("**Description**:(5)", "Le meilleur moyen de repousser SCP-060-FR et de détruire les instances de SCP-060-FR-1 est le feu. Lorsque n'importe quels autres types de dommages leur sont infligés, les instances de SCP-060-FR-1 vont [DONNÉES SUPPRIMÉES].")
+            .setFooter("~~Note : Depuis le début de son confinement, en [DONNÉES SUPPRIMÉES], SCP-060-FR est resté assis dans la position birmane et psalmodie en permanence en latin. Il s'est peut-être résigné à son sort ? - Dr. Reid~~")
+        message.channel.sendEmbed(scp_006fr)
+        console.log("Commande Info 060-FR")    
+    }
         
 });
