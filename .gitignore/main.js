@@ -180,6 +180,23 @@ bot.on('message', message => {
         console.log("Commande Dr Bright faite");  
 
     }
+    if (message.content === prefix + "info 137-fr"){
+        var scp_137fr = new Discord.RichEmbed()
+            .setColor('#07A48F')
+            .addField("**Objet#**:", "SCP-137-FR")
+            .addField("**Niveau de Menace**:", "Jaune")
+            .addField("**Procédures de Confinement Spéciales**:", "SCP-137-FR doit être conservé dans un coffre sécurisé au Site-Aleph et n'en être sorti qu'à l'occasion de tests sur des membres du personnel de Classe D. En dehors des tests, seuls des membres du personnel étant confirmés comme dépourvus de croyance religieuse sont autorisés à manipuler SCP-137-FR, afin de prévenir toute ouverture accidentelle.")
+            .addField("**Description**:", "SCP-137-FR est une brochure en papier glacé, mesurant 15 x 25 cm et pliée en deux. Sur le recto de SCP-137-FR est imprimée la phrase \"Un monde sans religion, est-ce possible ?\" accompagnée de l'image de la Terre entourée de divers symboles religieux. Le verso est simplement marqué du mot \"Oui.\" avec au bas le logo d'une organisation nommée \"SAPHIR\", jusqu'ici inconnue et non-recensée (voir le Journal de Récupération). \n Les deux volets internes sont vierges.")
+            .addField("**Description**:(2)", "Lorsqu'il est fermé, SCP-137-FR ne présente aucun effet anormal. Toutefois, lorsque SCP-137-FR est ouvert par un sujet ayant une appartenance à un quelconque mouvement religieux, tous deux vont instantanément disparaître. Le sujet et SCP-137-FR réapparaîtront ensuite dans un délai s'étalant de une (1) seconde à huit (8) heures après l'ouverture.")
+            .addField("**Description**:(3)", "Le sujet reviendra dans un fort état de choc, avec une santé mentale nettement fragilisée, et manifestera une profonde répulsion envers la religion à laquelle il appartenait avant l'expérience. Tous témoignent s'être retrouvés à l'emplacement géographique exact où ils se trouvaient, mais dans un monde invariablement dystopique où leur religion était la seule existante. Bien que la durée de leur présence là-bas soit indéterminée, elle semble bien supérieure au temps de leur disparition à la vue des expériences que les sujets y ont vécu. Une durée moyenne de trois mois a été suggérée.")
+            .addField("**Description**:(4)", "L'état de choc important des sujets compliquant leur interrogatoire, une cellule psychologique a été mise en place et l'usage de calmants est autorisé.")
+            .addField("**Journal de Récupération**:", "SCP-137-FR semble avoir été distribué en de multiples exemplaires le ██/██/████, sur une place de la ville de Dijon, France, par des membres volontaires issus d'une organisation nommée SAPHIR. L'attention de la Fondation fut attirée lorsque des agents infiltrés dans la police locale reçurent des témoignages de personnes \"disparaissant d'un coup\" et \"réapparaissant complètement traumatisés\".")
+            .addField("**Journal de Récupération**:()", "Lorsque la FIM Zêta-8 \"Blanche Colombe\" débarqua sur place pour administrer des amnésiques aux témoins et aux victimes, les membres de SAPHIR avaient disparu, en ayant préalablement récupéré ou détruit tous les exemplaires de SCP-137-FR présents sur place. SCP-137-FR fut heureusement trouvé dans une poubelle peu éloignée de la place, où il avait été jeté par un civil n'ayant pas pris le temps de l'ouvrir.")
+            .addField("**Journal de Récupération**:()", "Des recherches ont été lancées pour déterminer la nature et les objectifs de SAPHIR, bien qu'elles aient été jusque là assez peu fructueuses. Selon les recoupements effectués à ce jour, SAPHIR semble être un groupe intellectuel cherchant à porter atteinte aux religions dans leur globalité afin de promouvoir la pensée rationnelle. La devise marquée sous leur logo, \"Nostram Assulam Pavete\" (soit \"Craignez Notre Éclat\" en latin) prouve qu'ils se considèrent eux-même comme une menace. D'autres éclaircissements sont à suivre.")
+            .addField("Le Wiki", "Voir la pasge wiki complète: \n [SCP-137-FR](http://fondationscp.wikidot.com/scp-137-fr)", true)
+        message.channel.sendEmbed(scp_134fr)
+        console.log("Commande Info 134-FR faite")
+    }
 
 
    
