@@ -10,7 +10,7 @@ app.listen(app.get('port'), function(){
 })
 
 var bot = new Discord.Client();
-var prefix = ("/");
+var prefix = ("^");
 
 bot.on('ready', () => {
     bot.user.setGame("[/help]|Joue avec 173!");
