@@ -194,7 +194,7 @@ bot.on('message', message => {
             .addField("**Journal de Récupération**:()", "Lorsque la FIM Zêta-8 \"Blanche Colombe\" débarqua sur place pour administrer des amnésiques aux témoins et aux victimes, les membres de SAPHIR avaient disparu, en ayant préalablement récupéré ou détruit tous les exemplaires de SCP-137-FR présents sur place. SCP-137-FR fut heureusement trouvé dans une poubelle peu éloignée de la place, où il avait été jeté par un civil n'ayant pas pris le temps de l'ouvrir.")
             .addField("**Journal de Récupération**:()", "Des recherches ont été lancées pour déterminer la nature et les objectifs de SAPHIR, bien qu'elles aient été jusque là assez peu fructueuses. Selon les recoupements effectués à ce jour, SAPHIR semble être un groupe intellectuel cherchant à porter atteinte aux religions dans leur globalité afin de promouvoir la pensée rationnelle. La devise marquée sous leur logo, \"Nostram Assulam Pavete\" (soit \"Craignez Notre Éclat\" en latin) prouve qu'ils se considèrent eux-même comme une menace. D'autres éclaircissements sont à suivre.")
             .addField("Le Wiki", "Voir la pasge wiki complète: \n [SCP-137-FR](http://fondationscp.wikidot.com/scp-137-fr)", true)
-        message.channel.sendEmbed(scp_134fr)
+        message.channel.sendEmbed(scp_137fr)
         console.log("Commande Info 134-FR faite")
     }
 
