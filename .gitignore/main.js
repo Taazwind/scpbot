@@ -13,7 +13,7 @@ var bot = new Discord.Client();
 var prefix = ("^");
 
 bot.on('ready', () => {
-    bot.user.setGame("^help]|est SCP-\"%s\"!");
+    bot.user.setGame("^help]|Parle avec 343!");
     console.log("Bot prêt !");
 });
 
