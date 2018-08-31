@@ -156,7 +156,7 @@ bot.on('message', message => {
         console.log("Commande Info 060-FR")    
     }
     if (message.content === prefix + "info 173"){
-        var scp_173 =new Discord.RichEmbed()
+        var scp_173 = new Discord.RichEmbed()
             .setColor('#07A48F')
             .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-173/0LrEW.jpg")
             .addField("**Objet#**:", "SCP-173")
@@ -176,7 +176,7 @@ bot.on('message', message => {
            .addField("**Description**:", "Le PIRRRRRRRRE membre de la Fondation SCP !")
            .addField("La liste de ce qu'il est interdit de faire:", "[La liste](http://fondationscp.wikidot.com/the-things-dr-bright-is-not-allowed-to-do-at-the-foundation)", true)
            .setFooter("La devise de la Fondation est \"Sécuriser, Contenir, Protéger\", et non pas l'une des choses suivantes:  \n \"Sucer Couilles et Pénis\"")
-        message .channel.sendEmbed(dr_bright);
+        message.channel.sendEmbed(dr_bright);
         console.log("Commande Dr Bright faite");  
 
     }
@@ -194,10 +194,10 @@ bot.on('message', message => {
             .addField("**Journal de Récupération**:()", "Lorsque la FIM Zêta-8 \"Blanche Colombe\" débarqua sur place pour administrer des amnésiques aux témoins et aux victimes, les membres de SAPHIR avaient disparu, en ayant préalablement récupéré ou détruit tous les exemplaires de SCP-137-FR présents sur place. SCP-137-FR fut heureusement trouvé dans une poubelle peu éloignée de la place, où il avait été jeté par un civil n'ayant pas pris le temps de l'ouvrir.")
             .addField("**Journal de Récupération**:()", "Des recherches ont été lancées pour déterminer la nature et les objectifs de SAPHIR, bien qu'elles aient été jusque là assez peu fructueuses. Selon les recoupements effectués à ce jour, SAPHIR semble être un groupe intellectuel cherchant à porter atteinte aux religions dans leur globalité afin de promouvoir la pensée rationnelle. La devise marquée sous leur logo, \"Nostram Assulam Pavete\" (soit \"Craignez Notre Éclat\" en latin) prouve qu'ils se considèrent eux-même comme une menace. D'autres éclaircissements sont à suivre.")
             .addField("Le Wiki", "Voir la pasge wiki complète: \n [SCP-137-FR](http://fondationscp.wikidot.com/scp-137-fr)", true)
-        message.channel.sendEmbed(scp_137fr)
-        console.log("Commande Info 134-FR faite")
+        message.channel.sendEmbed(scp_137fr);
+        console.log("Commande Info 134-FR faite");
     }
-     if(message.content === prefix + "info 343"){
+    if (message.content === prefix + "info 343"){
         var scp_343 = new Discord.RichEmbed()
             .setColor('#07A48F')
             .addField("**Objet#**:", "SCP-343")
@@ -205,11 +205,9 @@ bot.on('message', message => {
             .addField("**Procédures de Confinement Spéciales**:", "SCP-343 réside dans une chambre de 6,1 mètres de longueur par 6,1 mètres de largeur sur le Site-17 de Sécurité Minimale. Tous les objets qu'il demande devront lui être apportés et il devra recevoir au moins une visite quotidienne d'un membre du personnel. Du fait de la nature de SCP-343 (voir description) toute tentative de mettre en place de nouvelles procédures de sécurité ou d’autorisations supplémentaires est inutile/impossible.")
             .addField("**Description**:", "SCP-343 est un homme, sans race particulière, d'apparence humaine et doté d'une omnipotence visible. SCP-343 fut découvert marchant dans les rues de Prague et fut confiné après qu'un des membres du personnel a été témoin de sa disparition de la rue et de sa réapparition sur un toit. SCP-343 est retenu, avec son accord, dans sa chambre puisque son emprisonnement s'est révélé impossible.")
             .addField("Le Wiki"," Voir la page complète: \n [SCP-343](http://fondationscp.wikidot.com/scp-343)", true)
-        message.sendEmbed(scp_343);
+        message.channel.sendEmbed(scp_343);
         console.log("Commande Info 343 faite");
 
     }
 
-
-   
 });
