@@ -13,7 +13,7 @@ var bot = new Discord.Client();
 var prefix = ("^");
 
 bot.on('ready', () => {
-    bot.user.setGame(`[^help]|Démaré en temps que : SCP-${bot.servers.length}!`);
+    bot.user.setGame(`[^help]|Démaré en temps que : SCP-%s!`);
     console.log("Bot prêt !");
 });
 
