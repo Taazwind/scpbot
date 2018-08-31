@@ -26,7 +26,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
-            .setColor('#07A48F')
+        .setColor("RANDOM")
             .addField("__Commande du Bot SCP__:", "Pour avoir les fiches d'informations des SCP **__tapez__**: /info lenuméroduscp")
             .addField("__SCP Safe__:", "-SCP-914 \n -SCP-343 \n -SCP-1025 \n -SCP-1074 \n -SCP-1123 \n ")
             .addField("__SCP Euclide__:", "-SCP-527 \n -SCP-006-FR \n -SCP-011-FR \n -SCP-060-FR \n -SCP-137-FR \n -SCP-002-FR \n -SCP-008 \n -SCP-049 \n -SCP-053 \n -SCP-066 (Euclide-impetus) \n -SCP-079 \n -SCP-087 \n -SCP-096 \n -SCP-173 \n -SCP-1128")
@@ -37,7 +37,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 527"){
         var scp_527 = new Discord.RichEmbed()
-            .setColor('#07A48F')
+        .setColor("RANDOM")
             .setThumbnail("http://scp-wiki.wdfiles.com/local--files/scp-527/fish.png")
             .addField("**Objet#**:", "SCP-527")
             .addField("**Classe**:", "Euclide")
@@ -55,7 +55,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 682"){
         var scp_682 = new Discord.RichEmbed()
-            .setColor('#07A48F')
+        .setColor("RANDOM")
             .setThumbnail("http://scp-wiki.wdfiles.com/local--files/scp-682/monster8editub9.jpg")
             .addField("**Objet#**:", "SCP-682")
             .addField("**Classe**:", "Keter")
@@ -69,7 +69,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 914"){
         var scp_914 = new Discord.RichEmbed()
-           .setColor('#07A48F')
+           .setColor("RANDOM")
            .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-914/gears3a.jpg")
            .addField("**Objet#**:", "SCP-914")
            .addField("**Classe**:", "Safe")
@@ -86,7 +86,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 106"){
         var scp_106 = new Discord.RichEmbed()
-           .setColor('#07A48F')
+           .setColor("RANDOM")
            .setThumbnail("http://scp-wiki.wdfiles.com/local--files/scp-106/that%20man.jpg")
            .addField("**Objet#**:", "SCP-106")
            .addField("**Classe**:", "Keter")
@@ -104,7 +104,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 006-fr"){
         var scp_006fr = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .addField("**Objet#**:", "SCP-006-FR")
             .addField("**Niveau de Menace**:", "Orange ")
             .addField("**Classe**:", "Euclide")
@@ -122,7 +122,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 011-fr"){
         var scp_011fr = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-011-fr/1358103143-221-fr.jpg")
             .addField("**Objet#**:", "SCP-011-FR")
             .addField("**Niveau de Menace**:", "~~Vert~~  Jaune")
@@ -138,7 +138,7 @@ bot.on('message', message => {
     }
     if (message.content  === prefix + "info 060-fr"){
         var scp_060fr = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-060-fr/wC4tuke.jpg")
             .addField("**Objet#**:", "SCP-060-FR")
             .addField("**Niveau de Menace**:", "Orange")
@@ -157,7 +157,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 173"){
         var scp_173 = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-173/0LrEW.jpg")
             .addField("**Objet#**:", "SCP-173")
             .addField("**Classe**:", "Euclide")
@@ -170,7 +170,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info bright"){
         var dr_bright = new Discord.RichEmbed()
-           .setColor('#07A48F')
+           .setColor("RANDOM")
            .addField("**Objet#**:", "Dr Bright")
            .addField("**Classe**:", "Apollyon")
            .addField("**Description**:", "Le PIRRRRRRRRE membre de la Fondation SCP !")
@@ -182,7 +182,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 137-fr"){
         var scp_137fr = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .addField("**Objet#**:", "SCP-137-FR")
             .addField("**Niveau de Menace**:", "Jaune")
             .addField("**Procédures de Confinement Spéciales**:", "SCP-137-FR doit être conservé dans un coffre sécurisé au Site-Aleph et n'en être sorti qu'à l'occasion de tests sur des membres du personnel de Classe D. En dehors des tests, seuls des membres du personnel étant confirmés comme dépourvus de croyance religieuse sont autorisés à manipuler SCP-137-FR, afin de prévenir toute ouverture accidentelle.")
@@ -199,7 +199,7 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 343"){
         var scp_343 = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .addField("**Objet#**:", "SCP-343")
             .addField("**Classe**:", "Safe")
             .addField("**Procédures de Confinement Spéciales**:", "SCP-343 réside dans une chambre de 6,1 mètres de longueur par 6,1 mètres de largeur sur le Site-17 de Sécurité Minimale. Tous les objets qu'il demande devront lui être apportés et il devra recevoir au moins une visite quotidienne d'un membre du personnel. Du fait de la nature de SCP-343 (voir description) toute tentative de mettre en place de nouvelles procédures de sécurité ou d’autorisations supplémentaires est inutile/impossible.")
@@ -211,22 +211,22 @@ bot.on('message', message => {
     }
     if (message.content === prefix + "info 1025"){
         var scp_1025 =new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-1025/SCP-1025.jpg")
             .addField("**Objet#**:", "SCP-1025")
             .addField("**Classe**:", "~~Keter~~ Safe")
             .addField("**Procédure de Confinement Spéciales**:~~En raison de son potentiel d'arme biologique pouvant détruire toute vie sur Terre, SCP-1025 doit être conservé dans une chambre forte souterraine isolée et surveillée par pas moins de 10 gardes armés, devant être relevés deux fois par semaines et subir des contrôles pour les agents infectieux.~~")
             .addField("**Procédure de Confinement Spéciales**:(suite)", "~~La chambre forte doit être équipée d'une charge de thermite devant être déclenchée aux premiers signes d'une brèche de confinement.~~")
             .addField("**Révision**:", "SCP-1025 doit être conservé dans un coffre fort sécurisé par un code. Les recherches supplémentaires nécessitent une approbation O5.")
-            .addField("**Description**:", "SCP-1025 est un livre relié d'approximativement 1500 pages. La couverture et la tranche présentent le titre \"L'Encyclopédie des Infections\". Le nom de l'éditeur indique que le livre fut imprimé en 19██ par l'imprimerie █████. Aucune autre copie du livre avec ce titre et cet éditeur n'a été trouvée, et il n'existe aucune trace écrite de l'existence de l'éditeur.")
-            .addField("**Description**:(suite)", "Les lecteurs de ce livre semblent développer les symptômes des maladies dont ils lisent la description. L'effet met entre █ et ██ heures pour se manifester.")
+            .addField("**Description**:", "SCP-1025 est un livre relié d'approximativement 1500 pages. La couverture et la tranche présentent le titre \"L'Encyclopédie des Infections\". Le nom de l'éditeur indique que le livre fut imprimé en 19¦¦ par l'imprimerie ¦¦¦¦¦. Aucune autre copie du livre avec ce titre et cet éditeur n'a été trouvée, et il n'existe aucune trace écrite de l'existence de l'éditeur.")
+            .addField("**Description**:(suite)", "Les lecteurs de ce livre semblent développer les symptômes des maladies dont ils lisent la description. L'effet met entre ¦ et ¦¦ heures pour se manifester.")
             .addField("Le Wiki", "Voir la page complète: \n [SCP-1025](http://fondationscp.wikidot.com/scp-1025)", true)
         message.channel.sendEmbed(scp_1025);
         console.log("Commande Info 1025 faite");
     }
     if (message.content === prefix + "info 1074"){
         var scp_1074_1 = new Discord.RichEmbed()
-           .setColor('#07A48F')
+           .setColor("RANDOM")
            .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-1074/1074.jpg")
            .addField("**Objet#**", "SCP-1074")
            .addField("**Classe**:", "Safe")
@@ -247,9 +247,11 @@ bot.on('message', message => {
         message.channel.sendEmbed(scp_1074_1);
         console.log("Commande Info 1074 faite");
     }
+        
+
     if (message.content === prefix + "info 1123"){
         var scp_1123 = new Discord.RichEmbed()
-            .setColor('#07A48F')
+            .setColor("RANDOM")
             .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-1123/SCP-1123.jpg")
             .addField("**Objet#**:", "SCP-1123")
             .addField("**Classe**:", "Safe")
@@ -270,6 +272,5 @@ bot.on('message', message => {
         console.log("Commande Info 1123 faite")
 
     }
-    
 
 });
