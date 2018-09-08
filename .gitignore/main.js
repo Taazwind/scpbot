@@ -209,21 +209,6 @@ bot.on('message', message => {
         console.log("Commande Info 343 faite");
 
     }
-    if (message.content === prefix + "info 1025"){
-        var scp_1025 = new Discord.RichEmbed()
-            .setColor("RANDOM")
-            .setThumbnail("http://fondationscp.wdfiles.com/local--files/scp-1025/SCP-1025.jpg")
-            .addField("**Objet#**:", "SCP-1025")
-            .addField("**Classe**:", "~~Keter~~ Safe")
-            .addField("**Procédure de Confinement Spéciales**:~~En raison de son potentiel d'arme biologique pouvant détruire toute vie sur Terre, SCP-1025 doit être conservé dans une chambre forte souterraine isolée et surveillée par pas moins de 10 gardes armés, devant être relevés deux fois par semaines et subir des contrôles pour les agents infectieux.~~")
-            .addField("**Procédure de Confinement Spéciales**:(suite)", "~~La chambre forte doit être équipée d'une charge de thermite devant être déclenchée aux premiers signes d'une brèche de confinement.~~")
-            .addField("**Révision**:", "SCP-1025 doit être conservé dans un coffre fort sécurisé par un code. Les recherches supplémentaires nécessitent une approbation O5.")
-            .addField("**Description**:", "SCP-1025 est un livre relié d'approximativement 1500 pages. La couverture et la tranche présentent le titre \"L'Encyclopédie des Infections\". Le nom de l'éditeur indique que le livre fut imprimé en 19¦¦ par l'imprimerie ¦¦¦¦¦. Aucune autre copie du livre avec ce titre et cet éditeur n'a été trouvée, et il n'existe aucune trace écrite de l'existence de l'éditeur.")
-            .addField("**Description**:(suite)", "Les lecteurs de ce livre semblent développer les symptômes des maladies dont ils lisent la description. L'effet met entre █ et ██ heures pour se manifester.")
-            .addField("Le Wiki", "Voir la page complète: \n [SCP-1025](http://fondationscp.wikidot.com/scp-1025)", true)
-        message.channel.sendEmbed(scp_1025);
-        console.log("Commande Info 1025 faite");
-    }
     if (message.content === prefix + "info 1074"){
         var scp_1074_1 = new Discord.RichEmbed()
            .setColor("RANDOM")
