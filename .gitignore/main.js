@@ -258,7 +258,7 @@ bot.on('message', message => {
 
     }
     if (message.content === prefix + "show scp-049"){
-        message.channel.send("Voici SCP-049", {files:["./scp_images/scp_049"]});
+        message.channel.send("Voici SCP-049", {files:["./scp_images/scp_049.jpg"]});
     }
 
 });
