@@ -257,7 +257,7 @@ bot.on('message', message => {
         console.log("Commande Info 1123 faite")
 
     }
-    if (message.content === prefix + "show scp-049"){
+    if (message.content.startsWith ("^show scp-049")) {
         message.channel.send("Voici SCP-049", {files:["./scp_images/scp_049.jpg"]});
     }
 
