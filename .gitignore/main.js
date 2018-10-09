@@ -13,7 +13,7 @@ var bot = new Discord.Client();
 var prefix = ("^");
 
 bot.on('ready', () => {
-    bot.user.setGame("[^help]!");
+    bot.user.setGame("[^help] !");
     console.log("Bot prêt !");
 });
 
