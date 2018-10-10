@@ -268,5 +268,13 @@ bot.on('message', message => {
         message.channel.sendEmbed(show_049)
         console.log("Commande Image 049 faite")
     }
+     if (message.content === prefix + "show 106"){
+        var show_106 = new Discord.RichEmbed()
+             .setColor("RANDOM")
+             .setTitle("Voici SCP-106:")
+             .setImage("http://scp-wiki.wdfiles.com/local--files/scp-106/that%20man.jpg")
+        message.channel.sendEmbed(show_106)
+        console.log("Commande Image 106 faite")
+    }
 
 });
