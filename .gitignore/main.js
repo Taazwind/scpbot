@@ -260,12 +260,13 @@ bot.on('message', message => {
     if (message.content.startsWith ("^show scp-049")) {
         message.channel.send("Voici SCP-049", {files:["./scp_images/scp_049.png"]});
     }
-     if (message.content === prefix + 'show scp_049') {
-        message.channel.send('Voici: SCP-049', {
-            files: [
-                "./scp_049.png"
-            ]
-        });
+     if (message.content === prefix + "show 049"){
+        var show_049 = new Discord.RichEmbed()
+             .setColor("RANDOM")
+             .setTitle("Voici SCP-049:")
+             .setImage("http://scp-wiki.wdfiles.com/local--files/scp-049/SCP-049")
+        message.channel.sendEmbed(show_049)
+        console.log("Commande Image 049 faite")
     }
 
 });
