@@ -263,7 +263,7 @@ bot.on('message', message => {
      if (message.content === prefix + "show 049"){
         var show_049 = new Discord.RichEmbed()
              .setColor("RANDOM")
-             .setTitle("Voici SCP-049:")
+             .setTitle("Voici __SCP-049__:")
              .setImage("http://scp-wiki.wdfiles.com/local--files/scp-049/SCP-049")
         message.channel.sendEmbed(show_049)
         console.log("Commande Image 049 faite")
@@ -271,7 +271,7 @@ bot.on('message', message => {
      if (message.content === prefix + "show 106"){
         var show_106 = new Discord.RichEmbed()
              .setColor("RANDOM")
-             .setTitle("Voici SCP-106:")
+             .setTitle("Voici __SCP-106__:")
              .setImage("http://scp-wiki.wdfiles.com/local--files/scp-106/that%20man.jpg")
         message.channel.sendEmbed(show_106)
         console.log("Commande Image 106 faite")
