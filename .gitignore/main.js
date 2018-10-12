@@ -287,9 +287,7 @@ bot.on('message', message => {
     if (message.content === prefix + "show 066"){
         var show_066 = new Discord.RichEmbed()
              .setColor("RANDOM")
-             .setTitle("Voici __SCP-066__: \n (Avant l'Incident 066-2.)")
-             .setImage("http://scp-wiki.wdfiles.com/local--files/scp-066/yarn1.jpg")
-             .addField("**Où**","La version après l'Incident 066-2.")
+             .setTitle("Voici __SCP-066__:")
              .setImage("http://img0.reactor.cc/pics/post/full/The-SCP-Foundation-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-SCP-art-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-SCP-3910782.jpeg")
         message.channel.sendEmbed(show_066)
         console.log("Commande Image 066 faite")
