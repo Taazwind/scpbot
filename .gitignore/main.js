@@ -39,13 +39,8 @@ bot.on('message', message => {
             .addField("**Description**:", "SCP-527 est un humanoïde mâle mesurant 1,67m, il est biologiquement normal, à l’exception de sa tête qui est celle d'un Puntius semifasciolatus, ou Barbus doré. \n SCP-527 ne montre aucune autre propriété anormale. La tête de SCP-527 fonctionne de la même manière qu'une tête humaine normale. SCP-527 est capable de communiquer comme un humain typique. Le tatouage \"M. Poisson, des Petits Messieurs® par Dr. Wondertainment\" apparaît sur le bas de son pied gauche.")
             .addField("**Découverte**:", "SCP-527 a été découvert à Boston par des agents de la Fondation et a été déplacé au Site-19 en 2004.")
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-527](http://fondationscp.wikidot.com/scp-527)", true)
-            message.channel.sendEmbed(scp_527);
-            console.log("Commande Info 527 faite");
-
-
-
-
-
+        message.channel.sendEmbed(scp_527);
+        console.log("Commande Info 527 faite");
     }
     if (message.content === prefix + "info 682"){
         var scp_682 = new Discord.RichEmbed()
@@ -75,8 +70,6 @@ bot.on('message', message => {
            .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-914](http://fondationscp.wikidot.com/scp-914)", true)
         message.channel.sendEmbed(scp_914);
         console.log("Commande Info 914 faite")
-
-
     }
     if (message.content === prefix + "info 106"){
         var scp_106 = new Discord.RichEmbed()
@@ -94,7 +87,6 @@ bot.on('message', message => {
            .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-106](http://fondationscp.wikidot.com/scp-106)", true)
         message.channel.sendEmbed(scp_106);
         console.log("Commande Info 106 faite");
-
     }
     if (message.content === prefix + "info 006-fr"){
         var scp_006fr = new Discord.RichEmbed()
@@ -127,8 +119,6 @@ bot.on('message', message => {
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-011](http://fondationscp.wikidot.com/scp-011-fr)", true)
         message.channel.sendEmbed(scp_011fr);
         console.log("Commande Info 011-FR faite");
-
-
     }
     if (message.content  === prefix + "info 060-fr"){
         var scp_060fr = new Discord.RichEmbed()
@@ -172,7 +162,6 @@ bot.on('message', message => {
            .setFooter("La devise de la Fondation est \"Sécuriser, Contenir, Protéger\", et non pas l'une des choses suivantes:  \n \"Sucer Couilles et Pénis\"")
         message.channel.sendEmbed(dr_bright);
         console.log("Commande Dr Bright faite");
-
     }
     if (message.content === prefix + "info 137-fr"){
         var scp_137fr = new Discord.RichEmbed()
@@ -201,7 +190,6 @@ bot.on('message', message => {
             .addField("Le Wiki"," Voir la page complète: \n [SCP-343](http://fondationscp.wikidot.com/scp-343)", true)
         message.channel.sendEmbed(scp_343);
         console.log("Commande Info 343 faite");
-
     }
     if (message.content === prefix + "info 1074"){
         var scp_1074_1 = new Discord.RichEmbed()
@@ -226,8 +214,6 @@ bot.on('message', message => {
         message.channel.sendEmbed(scp_1074_1);
         console.log("Commande Info 1074 faite");
     }
-
-
     if (message.content === prefix + "info 1123"){
         var scp_1123 = new Discord.RichEmbed()
             .setColor("RANDOM")
@@ -249,7 +235,6 @@ bot.on('message', message => {
             .addField("Voir la suite sur le wiki", "[LA SUITE](http://fondationscp.wikidot.com/scp-1123)", true)
         message.channel.sendEmbed(scp_1123)
         console.log("Commande Info 1123 faite")
-
     }
     if (message.content === prefix + "show 049"){
         var show_049 = new Discord.RichEmbed()
