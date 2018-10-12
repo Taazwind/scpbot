@@ -288,6 +288,7 @@ bot.on('message', message => {
         var show_066 = new Discord.RichEmbed()
              .setColor("RANDOM")
              .setTitle("Voici __SCP-066__:")
+             .setTitle("(Avant l'Incident 066-2.)")
              .setImage("http://scp-wiki.wdfiles.com/local--files/scp-066/yarn1.jpg")
         message.channel.sendEmbed(show_066)
         console.log("Commande Image 066 faite")
