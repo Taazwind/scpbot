@@ -276,5 +276,13 @@ bot.on('message', message => {
         message.channel.sendEmbed(show_106)
         console.log("Commande Image 106 faite")
     }
+    if (message.content === prefix + "show 527"){
+        var show_527 = new Discord.RichEmbed()
+             .setColor("RANDOM")
+             .setTitle("Voici __SCP-527__:")
+             .setImage("http://scp-wiki.wdfiles.com/local--files/scp-527/fish.png")
+        message.channel.sendEmbed(show_527)
+        console.log("Commande Image 527 faite")
+    }
 
 });
