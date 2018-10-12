@@ -11,7 +11,7 @@ bot.on('ready', () => {
     console.log("Bot prêt !");
 });
 
-bot.login('NDgzOTMyMDIzNDI2MjUyODAw.Dma3FA.Ipeli_mWajbrV-zOM--mRG9IqF0');
+bot.login('process.env.BOT_TOKEN');
 
 bot.on('message', message => {
     if (message.content === "Bonjour Bot"){
