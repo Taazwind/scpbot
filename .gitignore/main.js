@@ -2,12 +2,6 @@ const Discord = require('discord.js');
 const express = require('express');
 const app = express();
 
-//Début paramètres Heroku
-app.set('port', (process.env.PORT || 5000))
-
-app.listen(app.get('port'), function(){
-  console.log('Bot en ligne');
-})
 
 var bot = new Discord.Client();
 var prefix = ("^");
@@ -17,7 +11,7 @@ bot.on('ready', () => {
     console.log("Bot prêt !");
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login('NDgzOTMyMDIzNDI2MjUyODAw.Dma3FA.Ipeli_mWajbrV-zOM--mRG9IqF0');
 
 bot.on('message', message => {
     if (message.content === "Bonjour Bot"){
@@ -48,9 +42,9 @@ bot.on('message', message => {
             message.channel.sendEmbed(scp_527);
             console.log("Commande Info 527 faite");
 
-        
-        
-        
+
+
+
 
     }
     if (message.content === prefix + "info 682"){
@@ -80,7 +74,7 @@ bot.on('message', message => {
            .addField("**Description**:(3)", "Quand un objet est placé dans le compartiment d'entrée, une porte coulissante se ferme et le son d'une petite cloche retentit. Si l'interrupteur est tourné sur n'importe quelle position, SCP-914 \"raffinera\" l'objet dans le compartiment. Aucune énergie n'est perdue lors du processus, et l'objet semble être dans un état de stase jusqu'à ce que la porte du compartiment de sortie soit ouverte. Les observations minutieuses et les analyses n'ont pas démontré comment SCP-914 accomplit cela, et aucun objet de test n'a été observé à l'intérieur SCP-914 pendant le processus de \"raffinage\". Le processus dure entre cinq à dix minutes selon la taille de l'objet à raffiner.")
            .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-914](http://fondationscp.wikidot.com/scp-914)", true)
         message.channel.sendEmbed(scp_914);
-        console.log("Commande Info 914 faite") 
+        console.log("Commande Info 914 faite")
 
 
     }
@@ -118,7 +112,7 @@ bot.on('message', message => {
             .addField("**Description**:(8)", "Toutes les tentatives d'entrer dans la réserve pendant que SCP-006-FR était en état actif se sont soldées par un échec, et ont déclenché la colère de l'entité qui a tué tous les membres du personnel alors présents dans SCP-006-01-FR : voir Incident 01-006.")
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-006-FR](http://fondationscp.wikidot.com/scp-006-fr)", true)
         message.channel.sendEmbed(scp_006fr);
-        console.log("Commande Info 006-FR faite")   
+        console.log("Commande Info 006-FR faite")
     }
     if (message.content === prefix + "info 011-fr"){
         var scp_011fr = new Discord.RichEmbed()
@@ -133,7 +127,7 @@ bot.on('message', message => {
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-011](http://fondationscp.wikidot.com/scp-011-fr)", true)
         message.channel.sendEmbed(scp_011fr);
         console.log("Commande Info 011-FR faite");
-            
+
 
     }
     if (message.content  === prefix + "info 060-fr"){
@@ -153,7 +147,7 @@ bot.on('message', message => {
             .addField("**Description**:(5)", "Le meilleur moyen de repousser SCP-060-FR et de détruire les instances de SCP-060-FR-1 est le feu. Lorsque n'importe quels autres types de dommages leur sont infligés, les instances de SCP-060-FR-1 vont [DONNÉES SUPPRIMÉES].")
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-060-FR](http://fondationscp.wikidot.com/scp-060-fr)", true)
         message.channel.sendEmbed(scp_060fr)
-        console.log("Commande Info 060-FR")    
+        console.log("Commande Info 060-FR")
     }
     if (message.content === prefix + "info 173"){
         var scp_173 = new Discord.RichEmbed()
@@ -166,7 +160,7 @@ bot.on('message', message => {
             .addField("**Description**(suite):", "Dans le cas d'une attaque, le personnel doit respecter les procédures de confinement de Classe 4 concernant les objets dangereux. \n Le personnel a rapporté avoir entendu des bruits de grattements provenant de l'intérieur du conteneur lorsque personne n'est présent à l'intérieur. Ceci est considéré comme normal, et toute modification de ce comportement doit être signalé au Superviseur en service. \n La substance brun rougeâtre sur le sol est une combinaison de matières fécales et de sang. L'origine de ces substances est inconnue. La salle doit être nettoyée selon une fréquence bi-hebdomadaire.")
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-173](http://fondationscp.wikidot.com/scp-173)", true)
         message.channel.sendEmbed(scp_173);
-        console.log("Commande Info 173 faite");  
+        console.log("Commande Info 173 faite");
     }
     if (message.content === prefix + "info bright"){
         var dr_bright = new Discord.RichEmbed()
@@ -177,7 +171,7 @@ bot.on('message', message => {
            .addField("La liste de ce qu'il est interdit de faire:", "[La liste](http://fondationscp.wikidot.com/the-things-dr-bright-is-not-allowed-to-do-at-the-foundation)", true)
            .setFooter("La devise de la Fondation est \"Sécuriser, Contenir, Protéger\", et non pas l'une des choses suivantes:  \n \"Sucer Couilles et Pénis\"")
         message.channel.sendEmbed(dr_bright);
-        console.log("Commande Dr Bright faite");  
+        console.log("Commande Dr Bright faite");
 
     }
     if (message.content === prefix + "info 137-fr"){
@@ -232,7 +226,7 @@ bot.on('message', message => {
         message.channel.sendEmbed(scp_1074_1);
         console.log("Commande Info 1074 faite");
     }
-        
+
 
     if (message.content === prefix + "info 1123"){
         var scp_1123 = new Discord.RichEmbed()
@@ -257,10 +251,7 @@ bot.on('message', message => {
         console.log("Commande Info 1123 faite")
 
     }
-    if (message.content.startsWith ("^show scp-049")) {
-        message.channel.send("Voici SCP-049", {files:["./scp_images/scp_049.png"]});
-    }
-     if (message.content === prefix + "show 049"){
+    if (message.content === prefix + "show 049"){
         var show_049 = new Discord.RichEmbed()
              .setColor("RANDOM")
              .setTitle("Voici __SCP-049__:")
@@ -268,7 +259,7 @@ bot.on('message', message => {
         message.channel.sendEmbed(show_049)
         console.log("Commande Image 049 faite")
     }
-     if (message.content === prefix + "show 106"){
+    if (message.content === prefix + "show 106"){
         var show_106 = new Discord.RichEmbed()
              .setColor("RANDOM")
              .setTitle("Voici __SCP-106__:")
@@ -292,5 +283,6 @@ bot.on('message', message => {
         message.channel.sendEmbed(show_066)
         console.log("Commande Image 066 faite")
     }
+    
 
 });
