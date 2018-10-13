@@ -1,20 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @TazWind Sign out
-0
-1 0 TazWind/scpbot
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-scpbot/.gitignore/main.js
-891ce7f  13 hours ago
-@TazWind TazWind Update main.js
-      
-289 lines (266 sloc)  48 KB
 const Discord = require('discord.js');
 const express = require('express');
 const app = express();
