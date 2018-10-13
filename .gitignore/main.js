@@ -11,7 +11,7 @@ bot.on('ready', () => {
     console.log("Bot prêt !");
 });
 
-bot.login('process.env.BOT_TOKEN');
+bot.login(process.env.BOT_TOKEN);
 
 bot.on('message', message => {
     if (message.content === "Bonjour Bot"){
