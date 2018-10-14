@@ -2,15 +2,8 @@ const Discord = require('discord.js');
 const express = require('express');
 const app = express();
 const config = require("config.json");
-client.user.setActivity(config.prefix+`=help | Dans ${client.guilds.size} serveurs`);
-client.user.setStatus("online");
-
-//Début paramètres Heroku
-app.set('port', (process.env.PORT || 5000))
-
-app.listen(app.get('port'), function(){
-  console.log('Bot en ligne');
-})
+bot.user.setActivity(config.prefix+`help | ${bot.guilds.size} serveurs`);
+bot.user.setStatus("online");
 
 var bot = new Discord.Client();
 var prefix = ("=");
@@ -50,7 +43,7 @@ bot.on('message', message => {
             message.channel.sendEmbed(scp_527);
             console.log("Commande Info 527 faite");
 
-        
+  
         
         
 
