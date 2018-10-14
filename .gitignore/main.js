@@ -1,14 +1,12 @@
 const Discord = require('discord.js');
 const express = require('express');
 const app = express();
-const config = require("config.json");
-bot.user.setActivity(config.prefix+`help | ${bot.guilds.size} serveurs`);
-bot.user.setStatus("online");
 
 var bot = new Discord.Client();
 var prefix = ("=");
 
 bot.on('ready', () => {
+    bot.user.setGame("=help | Parle avec 343 ");
     console.log("Bot prêt !");
 });
 
