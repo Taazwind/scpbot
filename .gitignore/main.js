@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const express = require('express');
 const app = express();
+const config = require("config.json");
+client.user.setActivity(config.prefix+`=help | Dans ${client.guilds.size} serveurs`);
+client.user.setStatus("online");
 
 //Début paramètres Heroku
 app.set('port', (process.env.PORT || 5000))
@@ -13,7 +16,6 @@ var bot = new Discord.Client();
 var prefix = ("=");
 
 bot.on('ready', () => {
-    bot.user.setGame(`=help | Dans ${client.guilds.size} serveurs `);
     console.log("Bot prêt !");
 });
 
