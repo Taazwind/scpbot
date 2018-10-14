@@ -13,7 +13,7 @@ var bot = new Discord.Client();
 var prefix = ("=");
 
 bot.on('ready', () => {
-    bot.user.setGame("=help | Parle avec 343 ");
+    bot.user.setGame(`=help | Dans ${client.guilds.size} serveurs `);
     console.log("Bot prêt !");
 });
 
