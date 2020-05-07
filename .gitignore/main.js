@@ -18,7 +18,7 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("RANDOM")
             .addField("__Commandes du Bot SCP__:", "Pour avoir les fiches d'informations des SCP **__tapez__**: =info lenuméroduscp \n Pour voir les images des SCP **__tapez__**: =show lenuméroduscp")
-            .addField("__Autres commandes__:", "**__=don__**: Pour soutenir le Bot et le maintenir en vie")
+            .addField("__Autres commandes__:", "**__=don__**: Pour soutenir le Bot et le maintenir en vie !")
             .addField("__SCP Safe__:", "-SCP-914 \n -SCP-343 \n -SCP-1025 \n -SCP-1074 \n -SCP-1123 \n ")
             .addField("__SCP Euclide__:", "-SCP-527 \n -SCP-006-FR \n -SCP-011-FR \n -SCP-060-FR \n -SCP-137-FR \n -SCP-002-FR \n -SCP-008 \n -SCP-049 \n -SCP-053 \n -SCP-066 (Euclide-impetus) \n -SCP-079 \n -SCP-087 \n -SCP-096 \n -SCP-173 \n -SCP-1128")
             .addField("__SCP Keter__:", "-SCP-682 \n -SCP-062-FR \n -SCP-017 \n -SCP-029 \n -SCP-035 \n -SCP-076 \n -SCP-106 \n -SCP-939 \n ")
