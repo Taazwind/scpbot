@@ -28,7 +28,7 @@ bot.on('message', message => {
     if (message.content === prefix + "don"){
         var don_embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-            .addField("__**Pour faire un don ça ce passe ici**__:", "Vous pouvez regardé une pub pour me soutenir ou directement me faire un don [ici](https://utip.io/tazwind)", true)
+            .addField("__**Pour faire un don ça ce passe ici**__:", "Ce bot tourne sur un serveur payé par l'auteur, vous pouvez aider à son bon fonctionnement en allant sur [uTip](https://utip.io/tazwind) pour regarder une pub ou me faire un don.", true)
             .setFooter("Le BOT est en développement !")
         message.channel.sendEmbed(don_embed);
         console.log("Commande don faite");
