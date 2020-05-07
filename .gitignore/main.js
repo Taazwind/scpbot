@@ -6,17 +6,14 @@ var bot = new Discord.Client();
 var prefix = ("=");
 
 bot.on('ready', () => {
-    bot.user.setGame("=help | Parle avec 343 ");
-    console.log("Bot prêt !");
-});
+    bot.user.setActivity(`=help | SCP Info`, { type: 'WATCHING' });
+  console.log("Bot prêt !");
+  });
 
 bot.login(process.env.BOT_TOKEN);
 
 bot.on('message', message => {
-    if (message.content === "Bonjour Bot"){
-        message.reply("Bonjour !")
-        console.log('Bot:Bonjour')
-    }
+    
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -28,6 +25,14 @@ bot.on('message', message => {
         message.channel.sendEmbed(help_embed);
         console.log("Commande help faite");
     }
+    if (message.content === prefix + "don"){
+        var don_embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+            .addField("__**Pour faire un don ça ce passe ici**__:", "Vous pouvez regardé une pub pour me soutenir ou directement me faire un don [ici](https://utip.io/tazwind)", true)
+            .setFooter("Le BOT est en développement !")
+        message.channel.sendEmbed(don_embed);
+        console.log("Commande don faite");
+    }    
     if (message.content === prefix + "info 527"){
         var scp_527 = new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -40,11 +45,6 @@ bot.on('message', message => {
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-527](http://fondationscp.wikidot.com/scp-527)", true)
             message.channel.sendEmbed(scp_527);
             console.log("Commande Info 527 faite");
-
-  
-        
-        
-
     }
     if (message.content === prefix + "info 682"){
         var scp_682 = new Discord.RichEmbed()
@@ -59,6 +59,8 @@ bot.on('message', message => {
             .addField("Le Wiki", "Voir la page wiki complète:  \n [SCP-682](http://fondationscp.wikidot.com/scp-682)", true)
         message.channel.sendEmbed(scp_682);
         console.log("Commande Info 682 faite");
+
+
     }
     if (message.content === prefix + "info 914"){
         var scp_914 = new Discord.RichEmbed()
