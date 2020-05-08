@@ -6,21 +6,19 @@ var bot = new Discord.Client();
 var prefix = ("=");
 
 bot.on('ready', () => {
-    bot.user.setGame("=help | Parle avec 343 ");
-    console.log("Bot prêt !");
-});
+    bot.user.setActivity(`=help | SCP Info`, { type: 'WATCHING' });
+  console.log("Bot prêt !");
+  });
 
 bot.login(process.env.BOT_TOKEN);
 
 bot.on('message', message => {
-    if (message.content === "Bonjour Bot"){
-        message.reply("Bonjour !")
-        console.log('Bot:Bonjour')
-    }
+    
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-            .addField("__Commande du Bot SCP__:", "Pour avoir les fiches d'informations des SCP **__tapez__**: =info lenuméroduscp \n Pour voir les images des SCP **__tapez__**: =show lenuméroduscp")
+            .addField("__Commandes du Bot SCP__:", "Pour avoir les fiches d'informations des SCP **__tapez__**: =info lenuméroduscp \n Pour voir les images des SCP **__tapez__**: =show lenuméroduscp")
+            .addField("__Autres commandes__:", "**__=don__**: Pour soutenir le Bot et le maintenir en vie !")
             .addField("__SCP Safe__:", "-SCP-914 \n -SCP-343 \n -SCP-1025 \n -SCP-1074 \n -SCP-1123 \n ")
             .addField("__SCP Euclide__:", "-SCP-527 \n -SCP-006-FR \n -SCP-011-FR \n -SCP-060-FR \n -SCP-137-FR \n -SCP-002-FR \n -SCP-008 \n -SCP-049 \n -SCP-053 \n -SCP-066 (Euclide-impetus) \n -SCP-079 \n -SCP-087 \n -SCP-096 \n -SCP-173 \n -SCP-1128")
             .addField("__SCP Keter__:", "-SCP-682 \n -SCP-062-FR \n -SCP-017 \n -SCP-029 \n -SCP-035 \n -SCP-076 \n -SCP-106 \n -SCP-939 \n ")
@@ -28,6 +26,14 @@ bot.on('message', message => {
         message.channel.sendEmbed(help_embed);
         console.log("Commande help faite");
     }
+    if (message.content === prefix + "don"){
+        var don_embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+            .addField("__**Pour faire un don ça ce passe ici**__:", "Ce bot tourne sur un serveur payé par l'auteur, vous pouvez aider à son bon fonctionnement en allant sur [uTip](https://utip.io/tazwind) pour regarder une pub ou me faire un don.", true)
+            .setFooter("Le BOT est en développement !")
+        message.channel.sendEmbed(don_embed);
+        console.log("Commande don faite");
+    }    
     if (message.content === prefix + "info 527"){
         var scp_527 = new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -40,11 +46,6 @@ bot.on('message', message => {
             .addField("Le Wiki", "Voir la page wiki complète: \n [SCP-527](http://fondationscp.wikidot.com/scp-527)", true)
             message.channel.sendEmbed(scp_527);
             console.log("Commande Info 527 faite");
-
-  
-        
-        
-
     }
     if (message.content === prefix + "info 682"){
         var scp_682 = new Discord.RichEmbed()
@@ -59,6 +60,8 @@ bot.on('message', message => {
             .addField("Le Wiki", "Voir la page wiki complète:  \n [SCP-682](http://fondationscp.wikidot.com/scp-682)", true)
         message.channel.sendEmbed(scp_682);
         console.log("Commande Info 682 faite");
+
+
     }
     if (message.content === prefix + "info 914"){
         var scp_914 = new Discord.RichEmbed()
