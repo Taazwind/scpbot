@@ -253,9 +253,6 @@ bot.on('message', message => {
         console.log("Commande Info 1123 faite")
 
     }
-    if (message.content.startsWith ("^show scp-049")) {
-        message.channel.send("Voici SCP-049", {files:["./scp_images/scp_049.png"]});
-    }
      if (message.content === prefix + "show 049"){
         var show_049 = new Discord.RichEmbed()
              .setColor("RANDOM")
@@ -288,5 +285,13 @@ bot.on('message', message => {
         message.channel.sendEmbed(show_066)
         console.log("Commande Image 066 faite")
     }
+    if (message.content === prefix + "show 049"){
+        var show_527 = new Discord.RichEmbed()
+             .setColor("RANDOM")
+             .setTitle("Voici __SCP-049__:")
+             .setImage("http://fondationscp.wdfiles.com/local--files/scp-049/SCP-049.jpg")
+        message.channel.sendEmbed(show_527)
+        console.log("Commande Image 049 faite")
+    }  
 
 });
